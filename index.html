@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТОВ Альфатрейдінг Україна</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="logo1.jpg" alt="Альфатрейдінг Україна лого">
+                <span>Альфатрейдінг</span> Україна</a>
+            <button class="nav-toggle" aria-label="Відкрити меню">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Головна</a></li>
+                    <li><a href="contact.html#services"><i class="fas fa-cogs"></i> Наші послуги</a></li>
+                    <!-- <li><a href="catalog.html"><i class="fas fa-car"></i> Каталог авто</a></li> -->
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> Про нас</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <a href="tel:+380123456789"><i class="fas fa-phone"></i> +38 (073) 488-00-90</a>
+                <a href="mailto:andriw110@gmail.com"><i class="fas fa-envelope"></i> andriw110@gmail.com</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="body">
+            <section id="main-services">
+                <div class="container">
+                    <h2>ОСНОВНІ ПОСЛУГИ</h2>
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <i class="fas fa-search"></i>
+                            <h3>Підбір авто</h3>
+                            <p>Допоможемо знайти ідеальний автомобіль за вашими критеріями та бюджетом.</p>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-gavel"></i>
+                            <h3>Участь в аукціонах</h3>
+                            <p>Професійна участь в аукціонах Європи для придбання авто за найкращою ціною.</p>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-ship"></i>
+                            <h3>Доставка в Україну</h3>
+                            <p>Організація безпечного транспортування автомобіля з Європи до України.</p>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-file-alt"></i>
+                            <h3>Митне оформлення</h3>
+                            <p>Повний супровід процесу розмитнення та реєстрації автомобіля в Україні.</p>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-tools"></i>
+                            <h3>Ремонт та підготовка</h3>
+                            <p>Передпродажна підготовка та ремонт автомобіля за необхідності.</p>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Гарантія та підтримка</h3>
+                            <p>Надання гарантії та постійна підтримка клієнтів після придбання авто.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+        </div>
+    </main>
+    <!-- Решта вмісту сторінки -->
+    <footer>
+        <div class="footer-content">
+            <!-- <div class="footer-info">
+                <h3>ТОВ Альфатрейдінг Україна</h3>
+                <p>Ваш надійний партнер у пригоні авто з США</p>
+            </div> -->
+            <div class="footer-contact">
+                <h4>Контакти</h4>
+                <p><i class="fas fa-phone"></i> <a href="tel:+380123456789"> +38 (012) 345-67-89</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@alfatrading.ua">andriw110@gmail.com</a></p>
+            </div>
+            <div class="footer-social">
+                <h4>Слідкуйте за нами</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/alfatradingua" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/alfatradingua" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/alfatradingua" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ТОВ Альфатрейдінг Україна. Всі права захищені.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const nav = document.querySelector('nav');
+            const contactInfo = document.querySelector('.contact-info');
+    
+            navToggle.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                contactInfo.classList.toggle('active');
+            });
+    
+            // Анімація для фіксованого header при прокрутці
+            window.addEventListener('scroll', function() {
+                const header = document.getElementById('main-header');
+                if (window.scrollY > 50) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
